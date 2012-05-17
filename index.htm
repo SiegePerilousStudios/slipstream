@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+<script src="jquery.slipstream.js"></script>
+<script>
+
+$(function(){
+	var start = new Date();
+	var end = new Date();
+	end.setFullYear(end.getFullYear()+2)
+	$("#timeline").slipstream({
+		"start": start.getTime(),
+		"end": end.getTime()
+	});
+})
+</script>
+</head>
+<body style="overflow:auto;">
+
+<div id="timeline" style="width:5000px;">
+</div>
+</body>
+</html>
